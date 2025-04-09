@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="dados pessoais">
+        <p><h1>Formulario de dados pessoais</h1></p>
+        <h4>Nome:Patrik Freire Fraga da Silva</h4>
+        <h4>data de nascimento : 20/09/2001</h4>
+        <h4>CPF : 463.588.858-47</h4>
+        <h4>e-mail: <a href="mailto:Patrik.shiva@gmail.com">Patrik.shiva@gmail.com</a></h4>
+        <h4>Endereco: Rua baltazar veloso da Silva</h4>
+        <h4>Turma: Ciencia da computacao</h4>
+        <h4>Disciplina: aplicacao para internet</h4>
+        <h4><p>Data de hoje: <span id="dataAtual"></span></p>
+
+            <script>
+              const hoje = new Date();
+              const dia = String(hoje.getDate()).padStart(2, '0');
+              const mes = String(hoje.getMonth() + 1).padStart(2, '0'); // Janeiro = 0
+              const ano = hoje.getFullYear();
+          
+              const dataFormatada = `${dia}/${mes}/${ano}`;
+              document.getElementById('dataAtual').textContent = dataFormatada;
+            </script></h4>
+    </div>
+
+</body>
+</html>
