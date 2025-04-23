@@ -1,62 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Catálogo de Carros</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000000;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color:rgb(167, 111, 8);
+      margin-bottom: 40px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .carro {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .carro:hover {
+      transform: scale(1.03);
+    }
+
+    .carro img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .modelo {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .detalhes {
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .status {
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.9em;
+      display: inline-block;
+    }
+
+    .disponivel {
+      background-color: #ffe58a;
+      color: #a88c00;
+    }
+
+    .vendido {
+      background-color: #d9f7be;
+      color: #389e0d;
+    }
+    .logo-fixa {
+    position: fixed;
+    top: 20px;     
+    left: 20px;    
+    z-index: 1000; 
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b1f23;
+    color: white;
+    margin-top: 40px;
+  }
+  </style>
 </head>
 <body>
-    <div>
-        <ol>
-            <a>tabela ordenada</a>
-            <li>supra</li>
-            <li>etios</li>
-            <li>civic</li>
-            <li>NSX</li>
-            <li>Silvia s15</li>
-        </ol>
+    <a href="topsecret.html"><img src="img/top secret/ts-logo-gold-org.png" class="logo-fixa"></a>
+
+  <h1>Catálogo de Carros</h1>
+
+  <div class="galeria">
+    <div class="carro">
+      <img src="img/top secret/mk4.webp" alt="Toyota Supra">
+      <div class="info">
+        <div class="modelo">Toyota Supra GTE 1998</div>
+        <div class="detalhes">R$ 120.000</div>
+        <span class="status disponivel">Disponível</span>
+      </div>
     </div>
-    <div>
-        <ul>
-            <a>tabela sem ordem</a>
-            <li>toyota</li>
-            <li>toyota</li>
-            <li>honda</li>
-            <li>honda</li>
-            <li>nissan</li>
-        </ul>
-        <a href="https://www.google.com/" target="_blank">visitar o google</a>
+
+    <div class="carro">
+        <img src="img/top secret/nsx.jpg" alt="Honda NSX">
+        <div class="info">
+          <div class="modelo">Honda NSX 1990</div>
+          <div class="detalhes">R$ 115.000</div>
+          <span class="status vendido">Vendido</span>
+        </div>
+      </div>
+
+    <div class="carro">
+      <img src="img/top secret/Nissan-GTR-3.webp" alt="Nissan GTR r35">
+      <div class="info">
+        <div class="modelo">Nissan GTR r35 nismo 2023</div>
+        <div class="detalhes">R$ 115.000</div>
+        <span class="status vendido">Vendido</span>
+      </div>
     </div>
-    <p><img src="image/lobo.jpeg"  width="450" height="450" alt="patrik freire"></p>
-    <p><h2>analise e desenvolvimento de sistemas Patrik freire</h2></p>
-    <div>
-        <table border="1">\
-            <thead>
-                <tr>
-                    <th>time</th>
-                    <th>cidade</th>
-                    <th>serie</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>sao paulo</td>
-                    <td>sao paulo</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>cruzeiro</td>
-                    <td>minas gerais</td>
-                    <td>b</td>
-                </tr>
-                <tr>
-                    <td>palmeiras</td>
-                    <td>sao paulo</td>
-                    <td>A</td>
-                </tr>
-            </tbody>
-        </table>
+
+    <div class="carro">
+      <img src="img/top secret/silvias15.jpg" alt="Nissan Silvia s15">
+      <div class="info">
+        <div class="modelo">Nissan Silvia s15 2003</div>
+        <div class="detalhes">R$ 99.000</div>
+        <span class="status disponivel">Disponível</span>
+      </div>
     </div>
+
+    <div class="carro">
+        <img src="img/top secret/suprabodykit.jpg" alt="Toyota Supra">
+        <div class="info">
+          <div class="modelo">Toyota Supra top-secret-edition 1998</div>
+          <div class="detalhes">R$ 120.000</div>
+          <span class="status disponivel">Disponível</span>
+        </div>
+      </div>
+
+    <div class="carro">
+      <img src="img/top secret/mk5.webp" alt="Toyota Supra">
+      <div class="info">
+        <div class="modelo">Toyota Supra mk5 2019</div>
+        <div class="detalhes">R$ 65.000</div>
+        <span class="status vendido">Vendido</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Top Secret - Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
