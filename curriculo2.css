@@ -1,0 +1,207 @@
+/* ===== Fonte ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Corpo ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #f0f2f5;
+    color: #333;
+    padding: 30px;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #1e40af;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #1e40af;
+    width: 0;
+    transition: width 0.3s;
+    margin: 0 auto;
+}
+
+nav a:hover {
+    color: #0f172a;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== Seções ===== */
+section {
+    background: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 950px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #1e3a8a;
+    font-size: 1.4rem;
+    border-left: 4px solid #1e40af;
+    padding-left: 10px;
+}
+
+/* ===== Tabelas ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+table caption {
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+th, td {
+    border: 1px solid #e2e8f0;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+thead {
+    background: #1e3a8a;
+    color: #fff;
+}
+
+/* ===== Listas ===== */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* ===== Imagem ===== */
+figure {
+    text-align: center;
+    margin: 25px 0;
+}
+
+figure img {
+    max-width: 180px;
+    border-radius: 50%;
+    border: 4px solid #1e40af;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+figure figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* ===== Formulário ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #1e40af;
+    box-shadow: 0 0 5px rgba(30, 64, 175, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 15px 0;
+    background: #f8fafc;
+}
+
+legend {
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+/* ===== Botões ===== */
+button {
+    cursor: pointer;
+    background: #1e40af;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #0f172a;
+    transform: scale(1.03);
+}
+/* css para aprender */
